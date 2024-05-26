@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PedraPapelTesoura.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label
+                x:Name="Jogador"
+                Text="Jogador"
+                HorizontalOptions="Center"
+                FontSize="30"
+               ></Label>
+            <Editor
+                x:Name="player"
+                Placeholder="Digite seu nome"
+                HorizontalOptions="Center"
+                FontSize="15"
+                Text="Jogador"
+                WidthRequest="450"
+               ></Editor>
+            <HorizontalStackLayout HorizontalOptions="Center">
+            <Label
+                x:Name="resultadoPlayer"
+                FontSize="20"
+                Margin="20,35,20,0"
+                Text="papel"
+                ></Label>
+            <Label
+                x:Name="resultadoBot"
+                FontSize="20"
+                Margin="20,35,20,0"
+                Text="Pedra"
+                ></Label>
+            </HorizontalStackLayout>
+            <Label
+                x:Name="Resultado"
+                Text="vitoria do cleber"
+                Margin="20"
+                HorizontalOptions="Center"
+                FontSize="35"
+                ></Label>
+            <Button
+                Text="Jogar"
+                Clicked="Button_Clicked"
+                Margin="0, 140, 0, 0"
+               ></Button>
+            <Picker
+                x:Name="escolha"
+                HorizontalOptions="Center"
+                FontSize="15"
+                WidthRequest="250"
+                >
+                <Picker.Items>
+                    <x:String>Pedra</x:String>
+                    <x:String>Papel</x:String>
+                    <x:String>Tesoura</x:String>
+                </Picker.Items>
+            </Picker>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
