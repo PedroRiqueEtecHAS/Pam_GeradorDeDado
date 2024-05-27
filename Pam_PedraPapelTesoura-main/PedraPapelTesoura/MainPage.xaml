@@ -20,18 +20,38 @@
                 WidthRequest="450"
                ></Editor>
             <HorizontalStackLayout HorizontalOptions="Center">
-            <Label
-                x:Name="resultadoPlayer"
-                FontSize="20"
-                Margin="20,35,20,0"
-                Text="papel"
-                ></Label>
-            <Label
-                x:Name="resultadoBot"
-                FontSize="20"
-                Margin="20,35,20,0"
-                Text="Pedra"
-                ></Label>
+                <Image
+                    x:Name="imgPlayer"
+                    Source="padraoE.png"
+                    WidthRequest="300"
+                    Margin="0, 20, 0 ,0 "
+                    ></Image>
+                <Label 
+                    Background="Black"
+                    WidthRequest="5"
+                    Margin="0, 20, 0 ,0 "
+                    ></Label>
+                <Image
+                    x:Name="imgBot"
+                    Source="padraoD.png"
+                    WidthRequest="300"
+                    Margin="0, 20, 0 ,0 "
+                    ></Image>
+            </HorizontalStackLayout>
+            <HorizontalStackLayout 
+                HorizontalOptions="Center">
+                <Label
+                    x:Name="resultadoPlayer"
+                    FontSize="20"
+                    Margin="20,35,20,0"
+                    Text="papel"
+                    ></Label>
+                <Label
+                    x:Name="resultadoBot"
+                    FontSize="20"
+                    Margin="20,35,20,0"
+                    Text="Pedra"
+                    ></Label>
             </HorizontalStackLayout>
             <Label
                 x:Name="Resultado"
@@ -43,13 +63,17 @@
             <Button
                 Text="Jogar"
                 Clicked="Button_Clicked"
-                Margin="0, 140, 0, 0"
+                Margin="0, 50, 0, 20"
+                WidthRequest="450"
+                FontSize="20"
+                Background="Black"
                ></Button>
             <Picker
                 x:Name="escolha"
                 HorizontalOptions="Center"
-                FontSize="15"
-                WidthRequest="250"
+                FontSize="20"
+                WidthRequest="400"
+                
                 >
                 <Picker.Items>
                     <x:String>Pedra</x:String>
